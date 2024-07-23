@@ -32,6 +32,7 @@ public class ModLootTableModifiers {
                 entries.add(ItemEntry.builder(Items.PITCHER_POD).build());
                 entries.add(ItemEntry.builder(Items.TORCHFLOWER_SEEDS).build());
                 entries.add(ItemEntry.builder(ModItems.SHELL_SEEDS).build());
+                entries.add(ItemEntry.builder(ModItems.ICE_SEEDS).build());
 
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))

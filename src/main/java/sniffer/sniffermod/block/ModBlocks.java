@@ -11,6 +11,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import sniffer.sniffermod.SnifferMod;
+import sniffer.sniffermod.block.custom.IceCropBlock;
 import sniffer.sniffermod.block.custom.ShellCropBlock;
 import sniffer.sniffermod.block.ModBlocks;
 import net.minecraft.item.Item;
@@ -20,9 +21,18 @@ public class ModBlocks {
     public static final Block SHELL_CROP = Registry.register(Registries.BLOCK, new Identifier(SnifferMod.MOD_ID, "shell_crop"),
             new ShellCropBlock(FabricBlockSettings.copyOf(Blocks.TORCHFLOWER_CROP)));
     public static final Block SHELL_FLOWER = registerBlock("shell_flower",
-            new FlowerBlock(StatusEffects.RESISTANCE, 40, FabricBlockSettings.copyOf(Blocks.TORCHFLOWER).nonOpaque().noCollision().luminance(8)));
+            new FlowerBlock(StatusEffects.RESISTANCE, 200, FabricBlockSettings.copyOf(Blocks.TORCHFLOWER).nonOpaque().noCollision().luminance(5)));
     public static final Block POTTED_SHELL_FLOWER = registerBlock("potted_shell_flower",
-            new FlowerPotBlock(SHELL_FLOWER, FabricBlockSettings.copyOf(Blocks.POTTED_ALLIUM).nonOpaque().luminance(6)));
+            new FlowerPotBlock(SHELL_FLOWER, FabricBlockSettings.copyOf(Blocks.POTTED_ALLIUM).nonOpaque().luminance(4)));
+
+    // ice flower
+    public static final Block ICE_CROP = Registry.register(Registries.BLOCK, new Identifier(SnifferMod.MOD_ID, "ice_crop"),
+            new IceCropBlock(FabricBlockSettings.copyOf(Blocks.TORCHFLOWER_CROP).luminance(3)));
+    public static final Block ICE_FLOWER = registerBlock("ice_flower",
+            new FlowerBlock(StatusEffects.WATER_BREATHING, 100, FabricBlockSettings.copyOf(Blocks.TORCHFLOWER).nonOpaque().noCollision().luminance(7)));
+    public static final Block POTTED_ICE_FLOWER = registerBlock("potted_ice_flower",
+            new FlowerPotBlock(ICE_FLOWER, FabricBlockSettings.copyOf(Blocks.POTTED_ALLIUM).nonOpaque().luminance(6)));
+
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

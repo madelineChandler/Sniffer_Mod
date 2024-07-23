@@ -7,6 +7,7 @@ import net.minecraft.block.Blocks;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import sniffer.sniffermod.block.ModBlocks;
+import sniffer.sniffermod.effect.ModEffects;
 import sniffer.sniffermod.item.ModItemGroups;
 import sniffer.sniffermod.item.ModItems;
 import sniffer.sniffermod.potion.ModPotions;
@@ -25,6 +26,7 @@ public class SnifferMod implements ModInitializer {
 
 		ModLootTableModifiers.modifyLootTables();
 
+		ModEffects.registerEffects();
 		ModPotions.registerPotions();
 		// torchflower light level change
 		// Blocks.TORCHFLOWER.

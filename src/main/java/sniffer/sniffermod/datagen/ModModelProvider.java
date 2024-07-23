@@ -24,6 +24,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.SHELL_FLOWER, ModBlocks.POTTED_SHELL_FLOWER, noTint);
         blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.SHELL_CROP, noTint, Properties.AGE_1, 0, 1);
 
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.ICE_FLOWER, ModBlocks.POTTED_ICE_FLOWER, noTint);
+        blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.ICE_CROP, noTint, Properties.AGE_1, 0, 1);
+
         // 3d models
 
     }

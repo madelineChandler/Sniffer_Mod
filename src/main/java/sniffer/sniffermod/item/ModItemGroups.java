@@ -9,14 +9,21 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import sniffer.sniffermod.SnifferMod;
 import sniffer.sniffermod.block.ModBlocks;
+import sniffer.sniffermod.potion.ModPotions;
 
 public class ModItemGroups {
     public static final ItemGroup SNIFFER_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(SnifferMod.MOD_ID, "sniffer"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.sniffer"))
                     .icon(() -> new ItemStack(ModBlocks.SHELL_FLOWER)).entries((displayContext, entries) -> {
+                        // flowers
                         entries.add(ModItems.SHELL_SEEDS);
                         entries.add(ModBlocks.SHELL_FLOWER);
+
+                        entries.add(ModItems.ICE_SEEDS);
+                        entries.add(ModBlocks.ICE_FLOWER);
+
+                        // potions?
                     }).build());
 
     public static void registerItemGroups() {
