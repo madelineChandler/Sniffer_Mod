@@ -28,9 +28,10 @@ public class ModLootTableModifiers {
             if (SNIFFER_DIGGING_ID.equals(id)) {
                 List<LootPoolEntry> entries = new ArrayList<>();
 
+                // replace sniffer loot table
                 entries.add(ItemEntry.builder(Items.PITCHER_POD).build());
                 entries.add(ItemEntry.builder(Items.TORCHFLOWER_SEEDS).build());
-                //entries.add(ItemEntry.builder(ModBlocks.SHELL_SEEDS).build());
+                entries.add(ItemEntry.builder(ModItems.SHELL_SEEDS).build());
 
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))

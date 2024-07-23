@@ -1,6 +1,10 @@
 {
   "block.sniffermod.shell_flower": "Shell Flower",
-  "block.sniffermod.bush": "Rose Hedge",
+  "item.sniffermod.shell_seeds": "Shell Flower Seeds",
+
+  "item.minecraft.potion.effect.resistance_potion": "Resistance Potion",
+  "item.minecraft.splash_potion.effect.resistance_potion": "Splash Potion of Resistance",
+  "item.minecraft.lingering_potion.effect.resistance_potion": "Lingering Potion of Resistance",
 
   "itemgroup.sniffer": "Sniffer Items"
 }

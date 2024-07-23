@@ -2,13 +2,14 @@ package sniffer.sniffermod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import sniffer.sniffermod.block.ModBlocks;
-import sniffer.sniffermod.block.ModBlocks;
-import sniffer.sniffermod.datagen.ModLootTableProvider;
 import sniffer.sniffermod.item.ModItemGroups;
 import sniffer.sniffermod.item.ModItems;
+import sniffer.sniffermod.potion.ModPotions;
 import sniffer.sniffermod.util.ModLootTableModifiers;
 
 public class SnifferMod implements ModInitializer {
@@ -23,5 +24,9 @@ public class SnifferMod implements ModInitializer {
 		ModBlocks.registerModBlocks();
 
 		ModLootTableModifiers.modifyLootTables();
+
+		ModPotions.registerPotions();
+		// torchflower light level change
+		// Blocks.TORCHFLOWER.
 	}
 }

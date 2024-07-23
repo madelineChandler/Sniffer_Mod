@@ -2,7 +2,12 @@ package sniffer.sniffermod.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
+import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
+import net.minecraft.predicate.StatePredicate;
 import sniffer.sniffermod.block.ModBlocks;
+import sniffer.sniffermod.block.custom.ShellCropBlock;
+import sniffer.sniffermod.item.ModItemGroups;
+import sniffer.sniffermod.item.ModItems;
 
 public class ModLootTableProvider extends FabricBlockLootTableProvider {
     public ModLootTableProvider(FabricDataOutput dataOutput) {
@@ -11,8 +16,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
+        addDrop(ModBlocks.SHELL_CROP, ModItems.SHELL_SEEDS);
         addDrop(ModBlocks.SHELL_FLOWER);
         addPottedPlantDrops(ModBlocks.POTTED_SHELL_FLOWER);
-        addDrop(ModBlocks.BUSH);
     }
 }

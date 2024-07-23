@@ -15,8 +15,8 @@ public class ModItemGroups {
             new Identifier(SnifferMod.MOD_ID, "sniffer"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.sniffer"))
                     .icon(() -> new ItemStack(ModBlocks.SHELL_FLOWER)).entries((displayContext, entries) -> {
+                        entries.add(ModItems.SHELL_SEEDS);
                         entries.add(ModBlocks.SHELL_FLOWER);
-                        entries.add(ModBlocks.BUSH);
                     }).build());
 
     public static void registerItemGroups() {
