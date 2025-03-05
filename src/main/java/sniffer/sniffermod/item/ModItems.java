@@ -21,6 +21,9 @@ public class ModItems {
     public static final Item ICE_SEEDS = registerItem("ice_seeds",
             new AliasedBlockItem(ModBlocks.ICE_CROP, new FabricItemSettings()));
 
+    public static final Item CORPSE_SEEDS = registerItem("corpse_seeds",
+            new AliasedBlockItem(ModBlocks.CORPSE_CROP, new FabricItemSettings()));
+
     private static void addItemsToNaturalItemGroup(FabricItemGroupEntries entries) {
 
     }

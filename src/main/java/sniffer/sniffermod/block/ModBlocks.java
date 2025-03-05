@@ -10,7 +10,9 @@ import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.minecraft.world.gen.surfacebuilder.MaterialRules;
 import sniffer.sniffermod.SnifferMod;
+import sniffer.sniffermod.block.custom.CorpseFlowerBlock;
 import sniffer.sniffermod.block.custom.IceCropBlock;
 import sniffer.sniffermod.block.custom.ShellCropBlock;
 import sniffer.sniffermod.block.ModBlocks;
@@ -27,12 +29,17 @@ public class ModBlocks {
 
     // ice flower
     public static final Block ICE_CROP = Registry.register(Registries.BLOCK, new Identifier(SnifferMod.MOD_ID, "ice_crop"),
-            new IceCropBlock(FabricBlockSettings.copyOf(Blocks.TORCHFLOWER_CROP).luminance(3)));
+            new IceCropBlock(FabricBlockSettings.copyOf(Blocks.TORCHFLOWER_CROP)));
     public static final Block ICE_FLOWER = registerBlock("ice_flower",
-            new FlowerBlock(StatusEffects.WATER_BREATHING, 100, FabricBlockSettings.copyOf(Blocks.TORCHFLOWER).nonOpaque().noCollision().luminance(7)));
+            new FlowerBlock(StatusEffects.WATER_BREATHING, 100, FabricBlockSettings.copyOf(Blocks.TORCHFLOWER).nonOpaque().noCollision()));
     public static final Block POTTED_ICE_FLOWER = registerBlock("potted_ice_flower",
-            new FlowerPotBlock(ICE_FLOWER, FabricBlockSettings.copyOf(Blocks.POTTED_ALLIUM).nonOpaque().luminance(6)));
+            new FlowerPotBlock(ICE_FLOWER, FabricBlockSettings.copyOf(Blocks.POTTED_ALLIUM).nonOpaque()));
 
+    // corpse flower
+    public static final Block CORPSE_CROP = Registry.register(Registries.BLOCK, new Identifier(SnifferMod.MOD_ID, "corpse_crop"),
+            new IceCropBlock(FabricBlockSettings.copyOf(Blocks.PITCHER_CROP)));
+    public static final Block CORPSE_FLOWER = registerBlock("corpse_flower",
+            new CorpseFlowerBlock(FabricBlockSettings.copyOf(Blocks.PITCHER_PLANT).nonOpaque().noCollision()));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

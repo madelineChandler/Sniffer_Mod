@@ -24,8 +24,8 @@ public class ShellCropBlock extends CropBlock {
     };
     private static final int field_44479 = 1;
 
-    public static final int MAX_AGE = 2;
-    public static final IntProperty AGE = Properties.AGE_1;
+    public static final int MAX_AGE = 4;
+    public static final IntProperty AGE = Properties.AGE_4;
 
     public ShellCropBlock(Settings settings) {
         super(settings);

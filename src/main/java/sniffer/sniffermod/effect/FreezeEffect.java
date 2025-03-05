@@ -20,6 +20,10 @@ public class FreezeEffect extends StatusEffect {
             pLivingEntity.setVelocity(0, 0, 0);
         }
 
+        if (pLivingEntity.isOnFire()) {
+            pLivingEntity.extinguish();
+        }
+
         super.applyUpdateEffect(pLivingEntity, pAmp);
     }
 

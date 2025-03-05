@@ -28,7 +28,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.ICE_CROP, noTint, Properties.AGE_1, 0, 1);
 
         // 3d models
-
+        blockStateModelGenerator.registerSimpleState(ModBlocks.CORPSE_FLOWER);
     }
 
     @Override

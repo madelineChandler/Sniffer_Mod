@@ -1,0 +1,7 @@
+// 1.20.4	2024-07-26T15:31:34.3922851	Sniffer Mod/Block Loot Tables
+fcadcf2f8c28de748f9ea391cebd5db506ec8ee2 data\sniffermod\loot_tables\blocks\ice_crop.json
+bb3519d69bef272a622e99e52d1a44a741dd004c data\sniffermod\loot_tables\blocks\ice_flower.json
+eb1b609022ef7d1422c3e9198dbf16239f1411ba data\sniffermod\loot_tables\blocks\shell_flower.json
+f5d07cfabcbbefb5bd545b32eed0eab8e1a00a23 data\sniffermod\loot_tables\blocks\potted_ice_flower.json
+11259bcfb7e4a0654f2229c50a69f534405c1d04 data\sniffermod\loot_tables\blocks\shell_crop.json
+46111e132d1f49966b5689420d58ffa0f02cc0ad data\sniffermod\loot_tables\blocks\potted_shell_flower.json

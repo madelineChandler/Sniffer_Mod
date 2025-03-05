@@ -16,12 +16,15 @@ public class ModItemGroups {
             new Identifier(SnifferMod.MOD_ID, "sniffer"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.sniffer"))
                     .icon(() -> new ItemStack(ModBlocks.SHELL_FLOWER)).entries((displayContext, entries) -> {
-                        // flowers
+                        // seeds
                         entries.add(ModItems.SHELL_SEEDS);
-                        entries.add(ModBlocks.SHELL_FLOWER);
-
                         entries.add(ModItems.ICE_SEEDS);
+                        entries.add(ModItems.CORPSE_SEEDS);
+
+                        // flowers
+                        entries.add(ModBlocks.SHELL_FLOWER);
                         entries.add(ModBlocks.ICE_FLOWER);
+                        entries.add(ModBlocks.CORPSE_FLOWER);
 
                         // potions?
                     }).build());

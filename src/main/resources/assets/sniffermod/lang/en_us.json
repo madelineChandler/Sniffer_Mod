@@ -2,8 +2,11 @@
   "block.sniffermod.shell_flower": "Shell Flower",
   "item.sniffermod.shell_seeds": "Shell Flower Seeds",
 
-  "block.sniffermod.ice_flower": "Ice Flower",
-  "item.sniffermod.ice_seeds": "Ice Seeds",
+  "block.sniffermod.ice_flower": "Amethyst in Snow",
+  "item.sniffermod.ice_seeds": "Amethyst in Snow Seed",
+
+  "block.sniffermod.corpse_flower": "Corpse Flower",
+  "block.sniffermod.corpse_seeds": "Corpse Seeds",
 
   "item.minecraft.potion.effect.resistance_potion": "Potion of Resistance",
   "item.minecraft.splash_potion.effect.resistance_potion": "Splash Potion of Resistance",
@@ -13,7 +16,21 @@
   "item.minecraft.splash_potion.effect.freeze_potion": "Splash Potion of Freezing",
   "item.minecraft.lingering_potion.effect.freeze_potion": "Lingering Potion of Freezing",
 
+  "item.minecraft.potion.effect.fire_potion": "Potion of Fire",
+  "item.minecraft.splash_potion.effect.fire_potion": "Splash Potion of Fire",
+  "item.minecraft.lingering_potion.effect.fire_potion": "Lingering Potion of Fire",
+
+  "item.minecraft.potion.effect.strong_fire_potion": "Potion of Fire",
+  "item.minecraft.splash_potion.effect.strong_fire_potion": "Splash Potion of Fire",
+  "item.minecraft.lingering_potion.effect.strong_fire_potion": "Lingering Potion of Fire",
+
+  "item.minecraft.potion.effect.short_fire_resistance_potion": "Potion of Fire Resistance",
+  "item.minecraft.splash_potion.effect.short_fire_resistance_potion": "Splash Potion of Fire Resistance",
+  "item.minecraft.lingering_potion.effect.short_fire_resistance_potion": "Lingering Potion of Fire Resistance",
+
   "effect.sniffermod.freeze": "Freeze",
+  "effect.sniffermod.fire": "Instant Fire",
+  "effect.sniffermod.strong_fire": "Instant Fire II",
 
   "itemgroup.sniffer": "Sniffer Items"
 }
